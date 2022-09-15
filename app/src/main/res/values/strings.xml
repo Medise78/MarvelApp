@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MarvelApp</string>
+    <!--    Splash Activity -->
+    <string name="marvel">MARVEL</string>
+
+    <!--    Item character and Item comic -->
+    <string name="tx_item_name">Name</string>
+    <string name="tv_item_description">description</string>
+    <string name="text_description_empty">empty description</string>
+    <string name="comics">Comics</string>
+
+    <!--    Details Character Fragment -->
+    <string name="empty_list_comics">Empty</string>
+    <string name="close_dialog">Close</string>
+
+    <!--    Search Character Fragment -->
+    <string name="search_hint">Search Character</string>
+
+    <!--    Dialog delete -->
+    <string name="dialog_title_text">DELETE</string>
+    <string name="dialog_message_text">message</string>
+    <string name="dialog_positive_text">Delete</string>
+    <string name="dialog_negative_text">Cancel</string>
+
+    <!--    Favorite Character Fragment -->
+    <string name="message_delete_character">Character Deleted</string>
+    <string name="tv_empty_text">empty</string>
+
+    <!--    Menu details -->
+    <string name="favorite">Favorite</string>
+
+    <!--    Toast messages -->
+    <string name="an_error_occurred">error</string>
+    <string name="saved_successfully">Success</string>
+</resources>

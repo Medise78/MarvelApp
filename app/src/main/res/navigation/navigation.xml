@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listCharacterFragment">
+
+    <fragment
+        android:id="@+id/detailCharacterFragment"
+        android:name="com.medise.marvelapp.ui.details.DetailCharacterFragment"
+        android:label="DetailCharacterFragment"
+        tools:layout="@layout/fragment_detail_character">
+        <argument
+            android:name="character"
+            app:argType="com.medise.marvelapp.data.model.character.CharacterModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCharacterFragment"
+        android:name="com.medise.marvelapp.ui.list.ListCharacterFragment"
+        android:label="ListCharacterFragment"
+        tools:layout="@layout/fragment_list_character">
+        <action
+            android:id="@+id/action_listCharacterFragment_to_detailCharacterFragment"
+            app:destination="@id/detailCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteCharacterFragment"
+        android:name="com.medise.marvelapp.ui.favorites.FavoriteCharacterFragment"
+        android:label="FavoriteCharacterFragment"
+        tools:layout="@layout/fragment_favorite_character">
+        <action
+            android:id="@+id/action_favoriteCharacterFragment_to_detailCharacterFragment"
+            app:destination="@id/detailCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCharacterFragment"
+        android:name="com.medise.marvelapp.ui.search.SearchCharacterFragment"
+        android:label="SearchCharacterFragment"
+        tools:layout="@layout/fragment_search_character">
+        <action
+            android:id="@+id/action_searchCharacterFragment_to_detailCharacterFragment"
+            app:destination="@id/detailCharacterFragment" />
+    </fragment>
+</navigation>
